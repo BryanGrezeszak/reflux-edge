@@ -1,7 +1,7 @@
 {
-  "name": "reflux",
+  "name": "reflux-edge",
   "version": "0.5.0",
-  "description": "A simple library for uni-directional dataflow application architecture inspired by ReactJS Flux",
+  "description": "A beta/testing npm package for newest RefluxJS features.",
   "main": "src/index.js",
   "scripts": {
     "test": "grunt test",
@@ -9,24 +9,9 @@
     "benchmark": "node test/benchmarks",
     "build": "grunt build"
   },
-  "author": "Mikael Brassman",
+  "author": "Mikael Brassman, Bryan Grezeszak",
   "license": "BSD-3-Clause",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/reflux/refluxjs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/reflux/refluxjs/issues"
-  },
   "keywords": [
-    "reflux",
-    "react",
-    "flux",
-    "architecture",
-    "dataflow",
-    "action",
-    "event",
-    "data"
   ],
   "dependencies": {
     "eventemitter3": "^1.1.1",

@@ -964,6 +964,21 @@ Reflux.defineReact(React, Reflux);
 // now Reflux.Component is accessible!
 ```
 
+### Extending a 3rd Party Class
+
+Sometimes 3rd party libraries will have their own class that extends `React.Component` that they require you to use. Reflux handles this by exposing the `Reflux.Component.extend` method. If you have such a 3rd party class you can pass that class to this method and it will return a version of `Reflux.Component` that extends it instead of extending `React.Component` directly. Example:
+
+```javascript
+import {ThirdPartyComponent} from 'third-party';
+
+var RefluxThirdPartyComponent = Reflux.Component.extend(ThirdPartyComponent);
+
+class MyComponent extends RefluxThirdPartyComponent
+{
+	// ...
+}
+```
+
 [Back to top](#content)
 
 ## Colophon
